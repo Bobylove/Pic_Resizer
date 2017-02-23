@@ -13,8 +13,6 @@
 </head>
 <body>
 
-
-
     <div class="ui top fixed menu">
 
 
@@ -24,7 +22,7 @@
 
     </div>
 
-    <img class="ui  rounded  massive bordered image" src="https://unsplash.it/1920/1080?image=1067">
+    <img class="ui rounded  massive bordered image" src="image<?php echo rand(1,4); ?>.jpg" alt="image aleatoire">
 
         <div class="inputCopyPosition"> 
             
@@ -42,7 +40,7 @@
             <div class="ui centered grid">
 
                 <div class="formul">
-                    <form action="" method="post" class="ui form">
+                    <form id="resize" action="#" method="post" class="ui form">
                         {{csrf_field()}}
                         <div class="field">
                             <label for="largeur">Largeur</label>
