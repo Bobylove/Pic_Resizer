@@ -13,4 +13,5 @@
 
 
 Route::get('/' , 'PicresizerController@getIndex');
+Route::get('/1' , 'PicresizerController@getResize');
 
