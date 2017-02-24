@@ -22,7 +22,9 @@
 
     </div>
 
-    <img class="ui rounded  massive bordered image" src="image<?php echo rand(1,1); ?>.jpg" alt="image aleatoire">
+    <img class="ui rounded  massive bordered image" src="image{{$random}}.jpg" alt="image aleatoire">
+    <br>
+    
 
     <div class="inputCopyPosition"> 
 
@@ -40,21 +42,24 @@
         <div class="ui centered grid">
 
 
-            <div class="formul">
-                <form id="resize" action="#" method="post" class="ui form">
+        <div class="formul">
+                <form id="resize" action="/" method="POST" class="ui form">
                     {{csrf_field()}}
                     <div class="item">
 
                         <div class="field">
                             <label for="largeur">Largeur</label>
-                            <input type="text" name="width" placeholder="Largeur">
+                            <input type="text" name="width" id="width" placeholder="Largeur">
                         </div>
                     </div>
                     <div class="item">
                         <div class="field">
                             <label for="longueur">Longueur</label>
-                            <input type="text" name="heigth" placeholder="Longueur">
-                        <input type="submit" class="ui teal button" value="Valider">
+                            <input type="text" name="heigth" id="heigth" placeholder="Longueur">
+                        </div>
+                        <div class="item">
+                            <input type="submit" class="ui teal button" value="Valider">
+                        </div>
                     </form>
                 </div>
 
