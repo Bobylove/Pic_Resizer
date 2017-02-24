@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <div class="ui top menu">
+    <div class="ui teal inverted top menu">
 
 
         <div class="item">
@@ -24,18 +24,8 @@
 
     <img class="ui rounded  massive bordered image" src="image<?php echo rand(1,1); ?>.jpg" alt="image aleatoire">
 
-    <div class="inputCopyPosition"> 
 
-        <div class="ui  huge action input">
-            <input type="text" value="http://ww.short.url/c0opq">
-            <button class="ui teal right labeled icon button">
-                <i class="copy icon"></i>
-                Copy
-            </button>
-        </div>
-    </div>
-
-    <div class="ui  right fixed vertical menu">
+    <div class="ui teal inverted right fixed vertical menu">
 
         <div class="ui centered grid">
 
@@ -46,23 +36,38 @@
                     <div class="item">
 
                         <div class="field">
-                            <label for="largeur">Largeur</label>
+                            <label for="largeur" id="lab">Largeur</label>
                             <input type="text" name="width" placeholder="Largeur">
                         </div>
                     </div>
                     <div class="item">
                         <div class="field">
-                            <label for="longueur">Longueur</label>
+                            <label for="longueur" id="lab">Longueur</label>
                             <input type="text" name="heigth" placeholder="Longueur">
-                        <input type="submit" class="ui teal button" value="Valider">
-                    </form>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <input type="submit" class="ui inverted button" value="Valider">
+                    </div>
+                </form>
+            </div>
+            <div class="ui item">
+             <div class="inputCopyPosition">
+                <div class="ui small action input">
+                    <input type="text" value="http://ww.short.url/c0opq">
+                    <button class="ui inverted right labeled icon button">
+                        <i class="copy icon"></i>
+                        Copy
+                    </button>
                 </div>
-
             </div>
         </div>
     </div>
+</div>
 
 
-    <script src="{{ mix('/js/app.js') }}"></script>
+
+
+<script src="{{ mix('/js/app.js') }}"></script>
 </body>
 </html>
