@@ -23,7 +23,7 @@
     </div>
 
     <img class="ui rounded  massive bordered image" src="image{{$random}}.jpg" alt="image aleatoire">
-    <br>
+    
     
 
     <div class="inputCopyPosition"> 
@@ -42,7 +42,7 @@
         <div class="ui centered grid">
 
 
-        <div class="formul">
+            <div class="formul">
                 <form id="resize" action="/" method="POST" class="ui form">
                     {{csrf_field()}}
                     <div class="item">
