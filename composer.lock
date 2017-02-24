@@ -4,8 +4,10 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ce0509c3edd2c1695cc2c68daa5c7e15",
-    "content-hash": "28197e703fd6474f16e14de2eb270ccf",
+
+    "hash": "69879e406a43af317353b191656aafd5",
+    "content-hash": "96098e473b028cdb2529580554a1ae3e",
+
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -275,6 +277,7 @@
                 "watermark"
             ],
             "time": "2017-02-04 10:37:19"
+
         },
         {
             "name": "jakub-onderka/php-console-color",
