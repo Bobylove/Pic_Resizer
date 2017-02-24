@@ -13,5 +13,6 @@
 
 
 Route::get('/' , 'PicresizerController@getIndex');
+Route::get('/' , 'PicresizerController@getRandom');
 Route::post('/' , 'PicresizerController@getResize');
 
