@@ -1,9 +1,27 @@
 
-// Fonts
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 
-// Variables
-@import "variables";
+h1 {
+	font-family: Helvetica,Arial,sans-serif;
+	color: white;
+}
+img {
+	margin-top: 3px;
+	margin-left: 6em;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.inputCopyPosition {
+	margin-top: 32em;
+}
+.formul {
+	margin-top: 5em;
+	color: grey;
+	font-family: Helvetica,Arial,sans-serif;
 
-// Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+}
+.ui.right.fixed.vertical.menu {
+	width: 20em;
+}
+#lab {
+	color: white;
+}
+
