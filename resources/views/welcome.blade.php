@@ -23,7 +23,7 @@
     </div>
 
     <img class="ui rounded  massive bordered image" src="image{{$random}}.jpg" alt="image aleatoire">
-    <br>
+    
     
 
 

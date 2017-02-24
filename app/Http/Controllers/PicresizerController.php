@@ -16,13 +16,14 @@ class PicresizerController extends Controller
 	}
 
 	public function getResize(Request $request){
+
 		$news = new Picresizer();
 		$news->width = $request->input('width');
 		$news->heigth = $request->input('heigth');
 
 		$manager = new ImageManager(array('driver' => 'gd'));
 
-		$image = $manager->make('image1.jpg')->resize($news->width, $news->heigth);
+		$image = $manager->make('image3.jpg')->resize($news->width, $news->heigth);
 
 		return $image->response('jpg');
 
@@ -34,6 +35,6 @@ class PicresizerController extends Controller
 	}
 
 	public function getImgValue(){
-		
+
 	}
 }
